@@ -1,7 +1,7 @@
 import { produce } from "immer";
 import { useReducer } from "react";
 import Button from "../components/Button";
-import Panel from "../components/Panel";
+import Panels from "../components/Panels";
 
 const INCREMENT_COUNT = "increment";
 const SET_VALUE_TO_ADD = "set-value-to-add";
@@ -66,7 +66,7 @@ function CounterPage({ initialCount }) {
   };
 
   return (
-    <Panel className="m-3">
+    <Panels className="m-3">
       <h1 className="text-lg">Count is {state.count}</h1>
       <div className="flex flex-row">
         <Button onClick={increment}>Increment</Button>
@@ -83,7 +83,7 @@ function CounterPage({ initialCount }) {
         />
         <Button>Add it!</Button>
       </form>
-    </Panel>
+    </Panels>
   );
 }
 

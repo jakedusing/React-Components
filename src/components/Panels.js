@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-function Panel({ children, className, ...rest }) {
+function Panels({ children, className, ...rest }) {
   const finalClassNames = classNames(
     "border rounded p-3 shadow bg-white w-full",
     className
@@ -13,4 +13,4 @@ function Panel({ children, className, ...rest }) {
   );
 }
 
-export default Panel;
+export default Panels;
